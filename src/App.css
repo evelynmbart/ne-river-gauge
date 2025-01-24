@@ -1,6 +1,9 @@
 .app {
   min-height: 100vh;
-  background-color: #f5f7fa;
+  background-image: url("/hank1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-content {

@@ -61,18 +61,22 @@ function RiverDetail({ starredRivers, onToggleStar }) {
         <Link to="/" className="back-link">
           <FontAwesomeIcon icon={faArrowLeft} /> Back to Rivers
         </Link>
-        <button className="star-btn" onClick={() => onToggleStar(river.id)}>
-          <FontAwesomeIcon
-            icon={
-              starredRivers.includes(river.id) ? faStarSolid : faStarRegular
-            }
-            className={starredRivers.includes(river.id) ? "starred" : ""}
-          />
-        </button>
       </div>
 
       <div className="river-content">
-        <h1>{river.name}</h1>
+        <div className="title-container">
+          <h1>{river.name}</h1>
+          <button className="star-btn" onClick={() => onToggleStar(river.id)}>
+            <FontAwesomeIcon
+              size="lg"
+              icon={
+                starredRivers.includes(river.id) ? faStarSolid : faStarRegular
+              }
+              className={starredRivers.includes(river.id) ? "starred" : ""}
+            />
+          </button>
+        </div>
+
         <div className="river-info">
           <p className="location">{river.location}</p>
           <p className="fun-fact">{river.funFact}</p>
