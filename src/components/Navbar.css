@@ -1,0 +1,36 @@
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav-logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-starred {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo svg,
+.nav-starred svg {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem;
+  }
+
+  .nav-logo {
+    font-size: 1rem;
+  }
+}
