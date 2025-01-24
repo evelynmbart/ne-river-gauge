@@ -35,7 +35,7 @@ function StarredRivers({ starredRivers, onToggleStar }) {
           {starredRiversData.map((river) => (
             <div key={river.id} className="river-card">
               <button
-                className="star-btn"
+                className="star-btn-2"
                 onClick={() => onToggleStar(river.id)}
               >
                 <FontAwesomeIcon icon={faStarSolid} className="starred" />

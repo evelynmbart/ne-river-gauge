@@ -30,7 +30,7 @@
 }
 
 .river-content h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   color: var(--text-color);
   display: inline-block;
 }
@@ -41,16 +41,19 @@
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1rem;
+  position: relative;
 }
 
 /* Update star button styles */
 .star-btn {
   background: none;
   border: none;
-  padding: 0;
+  padding: 0.5rem;
   font-size: 1.25rem;
   color: #666;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .star-btn .starred {
