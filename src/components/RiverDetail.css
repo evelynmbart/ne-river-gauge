@@ -1,0 +1,112 @@
+.river-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.river-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.river-content {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.river-content h1 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.river-info {
+  margin-bottom: 2rem;
+}
+
+.location {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.fun-fact {
+  font-style: italic;
+  color: #666;
+}
+
+.flow-data {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.flow-data h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.flow-details {
+  text-align: center;
+}
+
+.flow-value {
+  margin-bottom: 1rem;
+}
+
+.flow-value .number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.flow-value .unit {
+  font-size: 1.5rem;
+  color: #666;
+  margin-left: 0.5rem;
+}
+
+.timestamp {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.river-image {
+  margin-top: 2rem;
+}
+
+.river-image img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.error {
+  color: #e53e3e;
+}
+
+@media (max-width: 768px) {
+  .river-content {
+    padding: 1rem;
+  }
+
+  .flow-value .number {
+    font-size: 2.5rem;
+  }
+
+  .flow-value .unit {
+    font-size: 1.25rem;
+  }
+}

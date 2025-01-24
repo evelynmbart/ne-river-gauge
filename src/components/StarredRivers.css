@@ -1,0 +1,104 @@
+.starred-rivers {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.starred-header {
+  margin-bottom: 2rem;
+}
+
+.starred-header h1 {
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
+.no-stars {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-stars .star-icon {
+  font-size: 3rem;
+  color: #cbd5e0;
+  margin-bottom: 1rem;
+}
+
+.no-stars p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.primary-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.primary-link:hover {
+  background-color: #2b6cb0;
+}
+
+/* Reuse styles from RiverList for consistency */
+.rivers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.river-card {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.river-card:hover {
+  transform: translateY(-2px);
+}
+
+.river-link {
+  display: block;
+  padding: 1rem;
+}
+
+.river-link h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.river-location {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.star-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.star-btn .starred {
+  color: #f6e05e;
+}
+
+@media (max-width: 768px) {
+  .starred-rivers {
+    padding: 0.5rem;
+  }
+
+  .rivers-grid {
+    grid-template-columns: 1fr;
+  }
+}
