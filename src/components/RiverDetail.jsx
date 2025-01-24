@@ -77,11 +77,6 @@ function RiverDetail({ starredRivers, onToggleStar }) {
           </button>
         </div>
 
-        <div className="river-info">
-          <p className="location">{river.location}</p>
-          <p className="fun-fact">{river.funFact}</p>
-        </div>
-
         <div className="flow-data">
           <h2>Current Flow Data</h2>
           {loading ? (
@@ -99,6 +94,13 @@ function RiverDetail({ starredRivers, onToggleStar }) {
               </p>
             </div>
           )}
+        </div>
+
+        <div className="river-info">
+          <p className="location">Location: {river.location}</p>
+          <p className="fun-fact">
+            The {river.name} is {river.funFact}.
+          </p>
         </div>
 
         {river.imageUrl && (
