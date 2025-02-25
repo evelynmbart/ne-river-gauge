@@ -170,5 +170,7 @@ export const states = [
     "Massachusetts",
     "New Hampshire",
     "Rhode Island",
-    "Vermont"
+    "Vermont",
+    "Pennsylvania",
+    "New York"
 ]; 
