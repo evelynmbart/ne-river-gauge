@@ -161,7 +161,25 @@ export const rivers = [
         location: "Rochester, NY",
         funFact: "The Genesee River is known for the spectacular High Falls in downtown Rochester, one of the largest waterfalls in the U.S. urban areas.",
         imageUrl: ""
-    }
+    },
+    {
+        id: 'nh-winnipesaukee',
+        name: "Winnipesaukee River",
+        state: "New Hampshire",
+        gaugeId: '01081000',
+        location: 'Tilton, NH',
+        funFact: "The Winnipesaukee River was once used for industrial purposes, including powering mills in the towns along its route. Today, it is appreciated for its natural beauty and is popular for activities like kayaking, fishing, and canoeing.",
+        imageUrl: "https://www.winnirivertrail.org/history/"
+    },
+    {
+        id: "ri-nooseneck",
+        name: "Nooseneck River",
+        state: "Rhode Island",
+        gaugeId: "01115630",
+        location: "Nooseneck, RI",
+        funFact: "The Nooseneck River has a unique name, which comes from the Narragansett Native American word 'nooseneck,' meaning 'a place where there is a bend' or 'a place with a twist.' The river is a small, winding waterway that flows through the towns of West Greenwich and Exeter",
+        imageUrl: "https://en.wikipedia.org/wiki/Nooseneck_River"
+    },
 ];
 
 export const states = [
